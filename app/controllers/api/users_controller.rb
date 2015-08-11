@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class Api::UsersController < ApplicationController
 
 	def new
 	end
@@ -17,5 +17,5 @@ class UsersController < ApplicationController
 
 	def destroy
 	end
-	
+
 end
