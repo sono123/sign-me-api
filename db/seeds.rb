@@ -7,3 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create(email: "steve@gmail.com", password: "abcd")
+(1..10).each do |n|
+	Document.create(user_id: 1, image_url: "www.file_#{n}.com")
+end

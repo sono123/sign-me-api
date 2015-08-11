@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150811050123) do
   enable_extension "plpgsql"
 
   create_table "documents", force: true do |t|
+    t.integer  "user_id"
     t.text     "image_url"
     t.datetime "created_at"
     t.datetime "updated_at"
