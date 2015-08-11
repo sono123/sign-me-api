@@ -1,4 +1,4 @@
-class Api::UsersController < ApplicationController
+class Api::UsersController < Api::ApiController
 
 	def new
 	end
@@ -7,6 +7,8 @@ class Api::UsersController < ApplicationController
 	end
 
 	def show
+		user = User.find(params[:id])
+		render json: user
 	end
 
 	def edit
